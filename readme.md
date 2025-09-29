@@ -1,11 +1,5 @@
 # Classic Search Engine
 
-**Project:** Classic Search Engine for medical entity-to-code mapping (SNOMED, UMLS, etc.)
-
-> This repository contains a compact, reproducible implementation of a classic information retrieval (IR) pipeline aimed at mapping short input entity descriptions (queries) to clinical coding targets (e.g., SNOMED codes). The README below documents the architecture, core approach, dataset structure, setup, usage, and evaluation instructions so you can copy–paste directly into your GitHub repo.
-
----
-
 ## Overview
 
 This project implements a classic search engine / retrieval system tailored for **medical entity normalization**: given a short textual entity (e.g., "mri pelvis"), retrieve the best-matching coding-system target (e.g., SNOMED CT code and description). The system demonstrates:
@@ -14,8 +8,6 @@ This project implements a classic search engine / retrieval system tailored for 
 - Indexing (inverted index, TF-IDF matrix, optionally BM25)
 - Retrieval (exact-match, lexical ranking using TF-IDF / BM25, optional semantic re-ranking using embeddings)
 - Evaluation (Top‑K accuracy / precision@K, MRR)
-
-**Note:** I inspected the uploaded files. The dataset `Test_predictions_upgraded.xlsx` (400 rows) is present and was used to infer the dataset structure. The notebook `Classic_search_engine.ipynb` in `/mnt/data` appears to be empty (file size small). The README below therefore documents a complete, ready-to-run structure and includes placeholders where you can plug in the actual notebook or scripts.
 
 ---
 
